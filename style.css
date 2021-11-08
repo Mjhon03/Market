@@ -616,12 +616,39 @@ textarea{
         cursor: pointer;
         font-size: 15px;
     }
+    .logo {
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        width: 200px;
+    }
+    .modal{
+        width: 300px;
+        height: 620px;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow:  1px 7px 25px rgba(0, 0, 0, 0.6) ;
+        transition: all 500ms ease;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    .content{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .modalImg{
+        height: 250px;
+        width: 300px;
+    }
     .container.active .main {
         animation: main-animation 0.5s ease;
-        transform: perspective(1300px) rotateY(20deg) translateZ(200px) scale(0.5);
+        transform: perspective(1300px) rotateY(20deg) translateZ(160px) scale(0.5);
     }
     .container.active .shadow.one {
-        transform: perspective(1300px) rotateY(20deg) translateZ(115px) scale(0.5);
+        transform: perspective(1300px) rotateY(20deg) translateZ(100px) scale(0.5);
     }
     
     .container.active .shadow.two {
@@ -633,7 +660,7 @@ textarea{
         }
         
         to {
-            transform: perspective(1300px) rotateY(20deg) translateZ(200px) scale(0.5);
+            transform: perspective(1300px) rotateY(20deg) translateZ(160px) scale(0.5);
         }
         }
     .innerText {
