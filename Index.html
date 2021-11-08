@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./style.css">
+    <title>MarketPlace</title>
+</head>
+<body>
+<main id="main">
+    <div class="container">
+        <div class="navbar">
+                <div class="menu">
+                    <h3 class="logo">Jhon <span>Montoya</span></h3>
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="car" id="car">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container">
+            <div class="main">
+            <header>
+                <div class="overlay">
+                <div class="innerText">
+                    <h2 class="title">Travel with us!</h2>
+                    <button class="btn">Read more</button>
+                </div>
+                </div>
+            </header>
+        </div>
+            <div class="shadow one"></div>
+            <div class="shadow two"></div>
+        </div>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="#" style="--i: 0.05s;">Home</a>
+                </li>
+                <li>
+                    <a id="newProduct" href="#" style="--i: 0.10s;">New Product</a>
+                </li>
+                <li>
+                    <a href="#" style="--i: 0.15s;">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section id="all" class="all">
+        <div id="containerModal" class="containerModal">
+            <div class="modal">
+                <div class="modalHeader">
+                    <p></p>
+                    <h2>Add product</h2>
+                    <p id="modalz">X</p>
+                </div>
+                <div id="validation" class="validation">
+                    <p>Added correctly!</p>
+                </div>
+                <br>
+                <div class="content">
+                    <div class="modalInfo">
+                        <input type="text" name="name" id="nameUploader" placeholder="Name">
+                        <input type="text" name="price" id="priceUploader" placeholder="Price">
+                        <textarea name="description" id="description" cols="30" rows="10" placeholder="Description of the product..."></textarea>
+                        <input type="file" name="imagen" id="imagenUploader">
+                        <button id="btnadd">Add</button>
+                    </div>
+                    <div class="modalImg">
+                        <img id="img-preview">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tablaCar" id="table">
+            <div class="tableContent">
+                <div class="modalHeader">
+                    <p></p>
+                    <h2>Cart</h2>
+                    <p id="modalx">X</p>
+                </div>
+                <div class="carInfo" id="divCar">
+                </div>
+                <div class="btnBuyAll">
+                    <h3 id="precioTotal"></h3>
+                    <button class="btn">Make payment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="allicons">
+            <div class="icons">
+                <a
+                class="btnIcons"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                    class="btnIcons"
+                    href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                    class="btnIcons"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-google"></i
+                        ></a>
+                        <!-- Instagram -->
+                        <a
+                        class="btnIcons"
+                        href="#!"
+                        role="button"
+                        data-mdb-ripple-color="dark"
+                        ><i class="fab fa-instagram"></i
+                            ></a>
+                            <a
+                            class="btnIcons"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark"
+                            ><i class="fab fa-linkedin"></i
+                                ></a>
+                                <a
+                                class="btnIcons"
+                                href="#!"
+                                role="button"
+                                data-mdb-ripple-color="dark"
+                                ><i class="fab fa-github"></i
+                                    ></a>
+                                </div>
+                            </div>
+                <div class="allinfo">
+            <div>
+                <h2></h2>
+                <h2>Jhon Maicol Montoya</h2>
+            </div>
+            <div>
+                <h2>All rights reversed &copy;2021</h2>        
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="products.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
