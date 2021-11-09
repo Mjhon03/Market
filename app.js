@@ -223,6 +223,9 @@ const addToCar = (e) => {
 const resProduct = (e) => {
     let item = e.target.getAttribute('id') 
     cart_produ.splice(parseInt(cart_produ.indexOf(item)),1)
+    if (cart_produ.length == 0) {
+        precio.textContent=0 + ".00 $";
+    }
     showCar();
     allPrice();
 }
@@ -231,6 +234,9 @@ const deleteProduct = (e) => {
     cart_produ = cart_produ.filter((id) => {
         return id !== item;
     });
+    if (cart_produ.length == 0) {
+        precio.textContent=0 + ".00 $";
+    }
     showCar();
     allPrice();
 
